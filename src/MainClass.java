@@ -12,9 +12,6 @@ public class MainClass {
             }
         });
 
-        // added to limit tunnel bandwidth
-    public static final Semaphore semTunnel = new Semaphore(CARS_COUNT / 2);
-
         // added to synchronize finish message
     public static final CountDownLatch cdlFinish = new CountDownLatch(CARS_COUNT);
 
